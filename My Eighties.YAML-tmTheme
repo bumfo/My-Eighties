@@ -90,21 +90,32 @@ settings:
 - name: Variable declaration
   scope: variable.declaration
   settings:
-    fontStyle: 'italic'
+    fontStyle: 'normal'
+    # fontStyle: 'italic'
     foreground: '#d3d0c8'
+- name: Function Variable
+  scope: variable.function
+  settings:
+    fontStyle: 'normal'
+    foreground: '#66cccc'
 
 - name: Punctuation
   scope: punctuation
   settings:
     foreground: '#747369'
+    fontStyle: 'normal'
 - name: Punctuation Visible
   scope: 
     punctuation.definition.string, 
     punctuation.definition.array, 
     punctuation.definition.object,
+    punctuation.definition.class,
     punctuation.definition.variable,
+    punctuation.initializer,
+    punctuation.arguments,
     punctuation.parameters,
     punctuation.rest-parameter
+  # punctuation.destructuring
   settings:
     foreground: '#a09f93'
 
@@ -112,6 +123,7 @@ settings:
   scope: meta.delimiter
   settings:
     foreground: '#747369'
+    fontStyle: 'normal'
 
 - name: Strings
   scope: string
@@ -121,6 +133,7 @@ settings:
 - name: Function Names
   scope: entity.name.function
   settings:
+    # fontStyle: normal
     foreground: '#6699cc'
 
 - name: Classes
@@ -146,6 +159,7 @@ settings:
 - name: Property names
   scope: entity.name.property, support.other.property-name
   settings:
+    fontStyle: 'normal'
     foreground: '#99cc99'
 
 - name: Tags
@@ -172,6 +186,13 @@ settings:
   # settings:
     # foreground: '#cc99cc'
     # fontStyle: 'italic'
+
+
+- name: Normal
+  scope: meta.normal
+  settings:
+    fontStyle: 'normal'
+    foreground: '#d3d0c8'
 
 # - name: Test
 #   scope: meta.statement.var.js

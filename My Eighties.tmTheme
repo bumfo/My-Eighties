@@ -218,9 +218,22 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>italic</string>
+				<string>normal</string>
 				<key>foreground</key>
 				<string>#d3d0c8</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Function Variable</string>
+			<key>scope</key>
+			<string>variable.function</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>normal</string>
+				<key>foreground</key>
+				<string>#66cccc</string>
 			</dict>
 		</dict>
 		<dict>
@@ -230,6 +243,8 @@
 			<string>punctuation</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string>normal</string>
 				<key>foreground</key>
 				<string>#747369</string>
 			</dict>
@@ -238,7 +253,7 @@
 			<key>name</key>
 			<string>Punctuation Visible</string>
 			<key>scope</key>
-			<string>punctuation.definition.string, punctuation.definition.array, punctuation.definition.object, punctuation.definition.variable, punctuation.parameters, punctuation.rest-parameter</string>
+			<string>punctuation.definition.string, punctuation.definition.array, punctuation.definition.object, punctuation.definition.class, punctuation.definition.variable, punctuation.initializer, punctuation.arguments, punctuation.parameters, punctuation.rest-parameter</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -252,6 +267,8 @@
 			<string>meta.delimiter</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string>normal</string>
 				<key>foreground</key>
 				<string>#747369</string>
 			</dict>
@@ -324,6 +341,8 @@
 			<string>entity.name.property, support.other.property-name</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string>normal</string>
 				<key>foreground</key>
 				<string>#99cc99</string>
 			</dict>
@@ -377,6 +396,19 @@
 			<string>CSS Vendor Prefix</string>
 			<key>scope</key>
 			<string>support.type.vendor-prefix.css</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Normal</string>
+			<key>scope</key>
+			<string>meta.normal</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>normal</string>
+				<key>foreground</key>
+				<string>#d3d0c8</string>
+			</dict>
 		</dict>
 	</array>
 	<key>uuid</key>
