@@ -51,6 +51,12 @@ settings:
   settings:
     fontStyle: 'normal'
     foreground: '#66cccc'
+- name: Any Functions
+  scope: variable.function.any
+  settings:
+    foreground: '#d3d0c8'
+    fontStyle: 'italic'
+
 - name: Library constant
   scope: support.constant
   settings:
@@ -72,11 +78,16 @@ settings:
   settings:
     fontStyle: 'italic'
     foreground: '#f2777a'
+# - name: Language Variables
+#   scope: variable.language
+#   settings:
+#     fontStyle: 'normal'
+#     foreground: '#f2777a'
 - name: Language Variables
   scope: variable.language
   settings:
-    fontStyle: 'normal'
-    foreground: '#f2777a'
+    fontStyle: 'italic'
+    foreground: '#d3d0c8'
 - name: Other Variables
   scope: variable.other
   settings:
@@ -93,15 +104,28 @@ settings:
     fontStyle: 'normal'
     # fontStyle: 'italic'
     foreground: '#d3d0c8'
+- name: Variable fake_parameter
+  scope: variable.fake_parameter
+  settings:
+    # fontStyle: 'normal'
+    fontStyle: 'italic'
+    foreground: '#d3d0c8'
 - name: Function Variable
   scope: variable.function
   settings:
     fontStyle: 'normal'
     foreground: '#66cccc'
+- name: Type Variable
+  scope: variable.type
+  settings:
+    fontStyle: 'italic'
+    foreground: '#d3d0c8'
+
 
 - name: Punctuation
   scope: punctuation
   settings:
+    # foreground: '#888782'
     foreground: '#747369'
     fontStyle: 'normal'
 - name: Punctuation Visible
@@ -111,13 +135,35 @@ settings:
     punctuation.definition.object,
     punctuation.definition.class,
     punctuation.definition.variable,
+    punctuation.definition.initializer,
     punctuation.initializer,
     punctuation.arguments,
     punctuation.parameters,
-    punctuation.rest-parameter
+    punctuation.rest-parameter,
+    punctuation.visible,
+    punctuation.section.quoted
   # punctuation.destructuring
   settings:
+    # foreground: '#918F8A'
     foreground: '#a09f93'
+
+
+- name: Punctuation
+  scope: punctuation.section.list
+  settings:
+    # foreground: '#a09f93'
+    foreground: '#918F8A'
+    # foreground: '#807F7B'
+    # foreground: '#888782'
+    fontStyle: 'normal'
+
+
+# - name: Punctuation
+#   scope: meta.quoted punctuation.section.list
+#   settings:
+#     foreground: '#747369'
+#     fontStyle: 'normal'
+
 
 - name: Delimiter
   scope: meta.delimiter
@@ -198,3 +244,8 @@ settings:
 #   scope: meta.statement.var.js
 #   settings: 
 #     background: '#515151'
+
+- name: Test
+  scope: invalid.illegal.identifier
+  settings: 
+    background: '#515151'
